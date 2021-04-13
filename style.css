@@ -1,6 +1,6 @@
 :root { /*create variable inside css*/
-    --input-linear: linear-gradient(120deg, #FA8072, #4682B4 );
-    --button-linear: linear-gradient(120deg, #4682B4, #FA8072, #4682B4 );
+    --input-linear: linear-gradient(120deg, #CD3333, #4682B4 );
+    --button-linear: linear-gradient(120deg, #4682B4, #CD3333, #4682B4 );
     --white: #ffffff;
     --black: #303030;
     --gray: #929292;
