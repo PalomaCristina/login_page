@@ -1,13 +1,16 @@
 :root { /*create variable inside css*/
-    --input-linear: linear-gradient(120deg, #CD3333, #4682B4 );
+    
+    --input-linear: linear-gradient(120deg, #79CDCD, #FFBBFF );
+    --input-error: red;
     --button-linear: linear-gradient(120deg, #4682B4, #CD3333, #4682B4 );
+    --button-disabled: #acacac;
+    --button-success: rgb(18, 151, 107);
     --white: #ffffff;
     --black: #303030;
     --gray: #929292;
     --light-gray: #cfcfcf;
     
 }
-
 
 body { /* zerando as config da pagina*/
     margin: 0;
@@ -81,8 +84,12 @@ body { /* zerando as config da pagina*/
 
 }
 
-.login_submit:hover {
-    background-position: right;
+.login_input-border.error {
+    background: var(--input-error) ;
+}
+
+.login_input-border.error::after {
+    background: var(--input-error) ;
 }
 
 .login_submit {
@@ -99,6 +106,23 @@ body { /* zerando as config da pagina*/
     border-radius: 4px;
     cursor: pointer;
     transition: 0.5s ease;
+}
+
+.login_submit:disabled {
+    background: var(--button-disabled);
+    cursor: not-allowed;   
+}
+
+.login_submit:hover {
+    background-position: right;
+}
+
+.login_submit.error {
+    background: var(--input-error);
+}
+
+.login_submit.success {
+    background: var(--button-success);
 }
 
 .login_reset {
